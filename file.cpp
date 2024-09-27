@@ -15,15 +15,16 @@ char str2[80];
  }
  cout << "enter a sentance"<< endl ;
 cin.getline(str,80);
-//for(int i =strlen(str) ;i>-1;i--){
-//if(isalnum(str[i])!=0){
-//  str2[count++]=str[i];
-//  str2[count]=tolower(str2[count]);
-//}
-//}
+for(int i =strlen(str) ;i>-1;i--){
+if(isalnum(str[i])!=0){
+  str2[count++]=str[i];
+  str2[count]=tolower(str2[count]);
+}
+}
   for(int i = 0;i<strlen(str);i++){
-   if(isalnum(str[i]!=0)){
+    if(isalnum(str[i])!=0){
        str3[count2++]=str[i];
+       str3[count]=tolower(str3[count]);
      }
  }
 
@@ -34,5 +35,5 @@ cin.getline(str,80);
    cout<<"not a palindrome"<< endl;
  }
  cout<<str3<<endl;
- //cout<<str2<<endl;
+ cout<<str2<<endl;
 }
