@@ -34,6 +34,4 @@ if(isalnum(str[i])!=0){
  else{
    cout<<"not a palindrome"<< endl;
  }
- cout<<str3<<endl;
- cout<<str2<<endl;
 }
